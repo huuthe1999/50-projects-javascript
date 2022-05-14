@@ -5,17 +5,75 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<!-- <link
+		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
-		/> -->
-		<title>Rotating Navigation animation</title>
+		/>
+		<title>Rotating Navigation Animation</title>
 	</head>
 	<body>
-		<h1>Hi there!</h1>
+		<div class="container">
+			<div class="container-circle">
+				<div class="circle">
+					<button id="openBtn">
+						<i class="fa-solid fa-bars"></i></button
+					><button id="closeBtn">
+						<i class="fa-solid fa-xmark"></i>
+					</button>
+				</div>
+			</div>
+			<div class="main">
+				<h1>Welcome to my website</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+					Sint aperiam ad laborum! Illo, obcaecati. Dolore maxime
+					molestiae laudantium omnis incidunt sunt aut alias cum unde
+					iusto ab itaque magni quam in, nulla hic aperiam fuga
+					blanditiis! Sint voluptatibus ipsam vero et quibusdam nam
+					similique quisquam quidem, consequuntur tempore ut modi
+					quaerat tenetur omnis enim maxime fugiat error doloribus
+					repudiandae at illum temporibus autem! At voluptatibus
+					recusandae labore magnam. Inventore sunt id cumque fuga,
+					sapiente, harum dicta, autem placeat eius sint unde ut
+					quaerat rem quia laboriosam ab dolores corporis quibusdam
+					assumenda? Minus perferendis aspernatur voluptatibus
+					voluptate ea nam earum? Consectetur.
+				</p>
+				<h2>My Pets</h2>
+				<img
+					src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+					alt="My cat"
+				/>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Expedita eligendi, aperiam ex sunt veniam praesentium dolor
+					laudantium ratione, accusantium voluptatem dignissimos
+					molestiae, placeat numquam. Eaque id maxime reprehenderit
+					laborum delectus inventore, possimus sed. Omnis illum nam
+					autem suscipit unde officiis nostrum, explicabo
+					exercitationem consectetur quo animi nesciunt nihil magni
+					voluptas repellat numquam laboriosam provident itaque hic
+					totam, consequatur deserunt asperiores repellendus aliquam!
+					Aut similique iusto id iure nobis soluta quae?
+				</p>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li style="--index: 0">
+					<i class="fas fa-home"></i><a href="#"> Home</a>
+				</li>
+				<li style="--index: 1">
+					<i class="fas fa-user-alt"></i><a href="#"> About</a>
+				</li>
+				<li style="--index: 2">
+					<i class="fas fa-envelope"></i><a href="#"> Contact</a>
+				</li>
+			</ul>
+		</nav>
 		<script src="script.js"></script>
 	</body>
 </html>
