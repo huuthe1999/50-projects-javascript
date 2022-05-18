@@ -1,0 +1,59 @@
+.app {
+}
+
+.header {
+	height: 120px;
+	background-image: linear-gradient(to bottom, #f53f2d 0%, #fd6133 100%);
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+.nav .nav__list {
+	margin-top: 4px;
+}
+
+.nav .nav__item {
+	position: relative;
+	margin: 0px 8px;
+}
+
+.nav .nav__item,
+.nav .nav__item--link {
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--white-color);
+}
+
+.nav .nav__item:hover,
+.nav .nav__item--link:hover {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.7);
+}
+.nav .nav__item--link {
+}
+
+.nav__item--bold {
+	font-weight: 600;
+}
+
+.nav__item--separate::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 16px;
+	display: block;
+	right: -9px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fb8096;
+}
+
+.nav .nav__item--social {
+	margin: 0px 4px;
+}
+
+.nav .nav__item--social i {
+	font-size: 1.8rem;
+}
