@@ -16,6 +16,7 @@
 .nav .nav__item {
 	position: relative;
 	margin: 0px 8px;
+	min-height: 26px;
 }
 
 .nav .nav__item,
@@ -35,7 +36,7 @@
 }
 
 .nav__item--bold {
-	font-weight: 600;
+	font-weight: 500 !important;
 }
 
 .nav__item--separate::after {
@@ -50,10 +51,123 @@
 	background-color: #fb8096;
 }
 
-.nav .nav__item--social {
+.nav .nav__item--icon {
 	margin: 0px 4px;
 }
 
-.nav .nav__item--social i {
+.nav .nav__item--icon i {
 	font-size: 1.8rem;
+}
+
+.nav .nav__item--social {
+	margin: 0 8px 0 0;
+}
+.nav .nav__item--text {
+	cursor: initial;
+	color: var(--white-color);
+}
+
+/* Header QR code */
+.nav__qr {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 186px;
+	border-radius: 2px;
+	padding: 8px;
+	background-color: var(--white-color);
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+.nav__qr::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background-color: transparent;
+}
+/* .nav__qr > img {
+	width: 100%;
+} */
+.nav__qr-apps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+}
+
+.nav__qr-apps img {
+	height: 19px;
+	max-width: 50%;
+	padding: 0 10px;
+}
+
+.nav__qr-apps img:nth-child(n + 3) {
+	margin-top: 6px;
+}
+
+.nav__item--qr:hover .nav__qr {
+	display: block;
+}
+
+/*Header-Notifications */
+.nav__notify {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	min-width: 500px;
+	background-color: var(--white-color);
+	border-radius: 5px;
+	z-index: 1;
+	box-shadow: 0 1px 4px 0px var(--white-color);
+}
+
+.nav__notify-header {
+	/* padding: 8px 8px 0; */
+	border: 1px solid #d3d3d3;
+	height: 50px;
+}
+
+.nav__notify-header h3 {
+	margin-left: 12px;
+	color: #999999;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 50px;
+}
+.nav__notify-list {
+}
+.nav__notify-item {
+}
+.nav__notify-item:hover {
+	background-color: #f5f5f5;
+}
+.nav__notify-item--read {
+	background-color: rgba(238, 75, 43, 0.08);
+}
+.nav__notify-link {
+	display: flex;
+	padding: 10px;
+}
+.nav__notify-link img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+}
+.nav__notify-info {
+	margin-left: 10px;
+}
+.nav__notify-info h5 {
+	font-weight: 500;
+	color: var(--black-color);
+}
+
+.nav__notify-info p {
+	margin-top: 4px;
+	font-size: 1.2rem;
+	color: var(--text-color);
 }
