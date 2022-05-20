@@ -179,33 +179,31 @@
 
 			<main class="main"></main>
 			<footer class="footer"></footer>
+			<!-- Modal auth form -->
 			<div class="modal">
 				<div class="modal__overlay"></div>
 				<div class="modal__main">
-					<div class="auth-form">
+					<!-- Register form -->
+					<div class="auth-form" style="display: none">
 						<header class="auth-form__header">
-							<h3 class="auth-form__title">Đăng nhập</h3>
-							<span class="auth-form__switch-btn">Đăng kí</span>
+							<h3 class="auth-form__title">Đăng ký</h3>
+							<span class="auth-form__switch-btn">Đăng nhập</span>
 						</header>
 						<form class="auth-form__form">
 							<div class="auth-form__form-group">
 								<input type="text" placeholder="Nhập email" />
 							</div>
-							<div class="auth-form__form">
-								<div class="auth-form__form-group">
-									<input
-										type="password"
-										placeholder="Nhập mật khẩu"
-									/>
-								</div>
+							<div class="auth-form__form-group">
+								<input
+									type="password"
+									placeholder="Nhập mật khẩu"
+								/>
 							</div>
-							<div class="auth-form__form">
-								<div class="auth-form__form-group">
-									<input
-										type="password"
-										placeholder="Nhập lại mật khẩu"
-									/>
-								</div>
+							<div class="auth-form__form-group">
+								<input
+									type="password"
+									placeholder="Nhập lại mật khẩu"
+								/>
 							</div>
 							<div class="auth-form__policy">
 								<p>
@@ -214,7 +212,8 @@
 									<a
 										href="https://shopee.vn/legaldoc/termsOfService/?__classic__=1"
 										>Điều khoản dịch vụ</a
-									>&
+									>
+									&
 									<a
 										href="https://shopee.vn/legaldoc/privacy/?__classic__=1"
 										>Chính sách bảo mật</a
@@ -223,21 +222,82 @@
 							</div>
 
 							<div class="auth-form__btn-controls">
-								<button class="btn btn--primary">
-									Đăng nhập
+								<button class="btn btn--secondary">
+									Trở lại
 								</button>
-								<button class="btn btn--secondary">Hủy</button>
+								<button class="btn btn--primary">
+									Đăng kí
+								</button>
 							</div>
+
 							<div class="auth-form__line">
 								<span>Hoặc</span>
 							</div>
 
 							<div class="auth-form__social-login-btns">
 								<a href="#" class="btn btn--facebook">
-									<i class="fa-brands fa-facebook"></i>
+									<i class="fa-brands fa-facebook"></i
+									>Facebook
 								</a>
 								<a href="#" class="btn btn--google">
-									<i class="fa-brands fa-google"></i>
+									<i class="fa-brands fa-google"></i>Google
+								</a>
+							</div>
+						</form>
+					</div>
+					<!-- Login Form -->
+					<div class="auth-form">
+						<header class="auth-form__header">
+							<h3 class="auth-form__title">Đăng nhập</h3>
+							<span class="auth-form__switch-btn">Đăng ký</span>
+						</header>
+						<form class="auth-form__form">
+							<div class="auth-form__form-group">
+								<input type="text" placeholder="Nhập email" />
+							</div>
+							<div class="auth-form__form-group">
+								<input
+									type="password"
+									placeholder="Nhập mật khẩu"
+								/>
+							</div>
+
+							<div class="auth-form__policy">
+								<p>
+									Bằng việc đăng kí, bạn đã đồng ý với Shopee
+									về
+									<a
+										href="https://shopee.vn/legaldoc/termsOfService/?__classic__=1"
+										>Điều khoản dịch vụ</a
+									>
+									&
+									<a
+										href="https://shopee.vn/legaldoc/privacy/?__classic__=1"
+										>Chính sách bảo mật</a
+									>
+								</p>
+							</div>
+
+							<div class="auth-form__btn-controls">
+								<button class="btn btn--secondary">
+									Trở lại
+								</button>
+								<button class="btn btn--primary">
+									Đăng nhập
+								</button>
+							</div>
+
+							<div class="auth-form__line">
+								<span>Hoặc</span>
+							</div>
+
+							<div class="auth-form__social-login-btns">
+								<a href="#" class="btn btn--facebook">
+									<i class="fa-brands fa-facebook"></i
+									>Facebook
+								</a>
+								<a href="#" class="btn btn--google">
+									<i class="fa-brands fa-google"></i>Google
 								</a>
 							</div>
 						</form>
